@@ -34,7 +34,7 @@ USER_NAME = getpass.getuser()
 
 
 pyautogui.FAILSAFE = False
-commands_list="Усі команди:\n/delete\n/check\n/open\n/search\n/console\n/get\n/post\n/run\n/stop\n/voice\n/create\n/read\n/write\n/mess"
+commands_list="Усі команди:\n/delete\n/check\n/open\n/search\n/console\n/get\n/post\n/run\n/stop\n/voice\n/create\n/read\n/write\n/mess\n/fold"
 PCK = False
 mouse = False
 lock = False

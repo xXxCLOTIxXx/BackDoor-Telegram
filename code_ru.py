@@ -33,7 +33,7 @@ USER_NAME = getpass.getuser()
 
 
 pyautogui.FAILSAFE = False
-commands_list="Все команды:\n/delete\n/check\n/open\n/search\n/console\n/get\n/post\n/run\n/stop\n/voice\n/create\n/read\n/write\n/mess"
+commands_list="Все команды:\n/delete\n/check\n/open\n/search\n/console\n/get\n/post\n/run\n/stop\n/voice\n/create\n/read\n/write\n/mess\n/fold"
 PCK = False
 mouse = False
 lock = False
@@ -47,7 +47,7 @@ func = button("Функции💽")
 commands = button("Слэш команды⚡")
 dangerous_commands = button("Опасная зона🛑")
 help_b = button("Помощь❓")
-start_menu = markup(resize_keyboard = True, row_width=2).add(func, commands, dangerous_commands)
+start_menu = markup(resize_keyboard = True, row_width=2).add(func, commands, dangerous_commands, help_b)
 
 #-----------------функции------------------------------------------
 screen_b = button("Скриншот💻")
