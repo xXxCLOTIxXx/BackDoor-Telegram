@@ -320,7 +320,7 @@ def command_parser(ct: str, userId, save):
 			if content[0][0] == '/':
 				if content[0][1:] == 'delete':client.send_message(userId, delete(path=ct.replace(content[0],"")[1:]))
 				elif content[0][1:] == 'check':check(path=ct.replace(content[0],"")[1:], userId=userId)
-				elif content[0][1:] == 'open':client.send_message(userId, open(url=ct.replace(content[0],"")[1:]))
+				elif content[0][1:] == 'open':client.send_message(userId, open_url(url=ct.replace(content[0],"")[1:]))
 				elif content[0][1:] == 'search':client.send_message(userId, "Розпочато пошук файлів з відповідним ім'ям.\nЯк тільки процес буде закінчено, я повідомлю вас✔");Thread(target=search_file, args=(ct.replace(content[0],"")[1:], userId)).start()
 				elif content[0][1:] == 'console':os.system(ct.replace(content[0],"")[1:])
 				elif content[0][1:] == 'get':get(path=ct.replace(content[0],"")[1:], userId=userId)
